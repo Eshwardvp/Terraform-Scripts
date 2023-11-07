@@ -17,7 +17,14 @@ if you are still facing installing terraform in windows, you can install terrafo
        Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 
 
-     
+The first step is, we need to configure aws 
+  aws configure
+
+ create a user with ec2full access policy and get the aws accesskey & secretaccess id
+
+you can cross check whether it is configured or not by  executing the below command
+
+aws s3 ls 
  
 
-The first step is, we need to configure aws 
+  
